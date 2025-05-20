@@ -30,7 +30,9 @@ RUN npm install
 
 # Copy rest of the app and build
 COPY . .
-RUN npm run build
+
+EXPOSE PORT
+CMD ["npm", "run", "dev"]
 ```
 
 ---
@@ -117,8 +119,8 @@ RUN npm run build
 
 EXPOSE 3000
 
-CMD ["npm" , "start"]
----
+CMD ["npm", "run", "dev"]
+
 
 ### 📦 Step 3: Build Docker Image
 
