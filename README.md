@@ -58,21 +58,21 @@ This generates a `build/` folder with optimized static files.
 
 In the root of your project, create a file named `Dockerfile`:
 
-```Dockerfile
-# Step 1: Build the React app
+# Step: Build the React app
 FROM node:18-alpine AS builder
 WORKDIR /app
+
+# Copy and install dependencies
 COPY package*.json ./
 RUN npm install
+
+# Copy the rest of the code and build
 COPY . .
 RUN npm run build
 
-# Step 2: Serve the build with Nginx
-FROM nginx:stable-alpine
-COPY --from=builder /app/build /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-```
+# Optional: Define output if needed for CI/CD
+# For example, to copy build artifacts to host, use:
+# docker
 
 ---
 
