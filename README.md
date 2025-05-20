@@ -1,6 +1,6 @@
 # dockerazation-frontend
 
-Perfect! Here’s a **step-by-step Dockerization tutorial for a React App** you can use for a blog, YouTube video, or LinkedIn post.
+**step-by-step Dockerization tutorial for a React App**
 
 ---
 
