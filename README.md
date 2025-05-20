@@ -14,9 +14,9 @@ The first step is to install a build tool like vite, parcel, or rsbuild. These b
 Vite 
 Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.
 
- Terminal
- Copy
+ 
 npm create vite@latest my-app -- --template react
+
 Vite is opinionated and comes with sensible defaults out of the box. Vite has a rich ecosystem of plugins to support fast refresh, JSX,  Babel/SWC, and other common features. See Vite’s React plugin or React SWC plugin and React SSR example project to get started.
 
 Vite is already being used as a build tool in one of our recommended frameworks: React Router.
@@ -24,17 +24,18 @@ Vite is already being used as a build tool in one of our recommended frameworks:
 Parcel 
 Parcel combines a great out-of-the-box development experience with a scalable architecture that can take your project from just getting started to massive production applications.
 
- Terminal
- Copy
+
 npm install --save-dev parcel
+
 Parcel supports fast refresh, JSX, TypeScript, Flow, and styling out of the box. See Parcel’s React recipe to get started.
 
 Rsbuild 
+
 Rsbuild is an Rspack-powered build tool that provides a seamless development experience for React applications. It comes with carefully tuned defaults and performance optimizations ready to use.
 
- Terminal
- Copy
+
 npx create-rsbuild --template react
+
 Rsbuild includes built-in support for React features like fast refresh, JSX, TypeScript, and styling. See Rsbuild’s React guide to get started.
 
 Note
