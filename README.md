@@ -114,8 +114,10 @@ RUN npm install
 # Copy the rest of the files and build
 COPY . .
 RUN npm run build
-```
 
+EXPOSE 3000
+
+CMD ["npm" , "start"]
 ---
 
 ### 📦 Step 3: Build Docker Image
